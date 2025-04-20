@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .div1 {
+        background-image: url(images/paper.jpg);
+        height: 250px;
+        width: auto;
+      }
+      .para1 {
+        border: 2px solid #333;
+        background-color: lightgreen;
+        padding: 25px;
+      }
+      .para2 {
+        border: 2px solid #333;
+        background: transparent;
+        padding: 25px;
+      }
+      .div2 {
+        background-image: url(images/paper.jpg);
+        height: 250px;
+        width: auto;
+        color: green;
+      }
+      .para3 {
+        color: blue;
+        border: 2px solid currentColor;
+        padding: 25px;
+      }
+      .para4 {
+        box-shadow: 0px 0px 15px currentcolor;
+        border: 5px solid currentcolor;
+        padding: 25px;
+      }
+      .div {
+        border: 2px solid red;
+      }
+      .span {
+        border: inherit;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <div class="div1">
+      <h2>Transparents Css:</h2>
+      <div>
+        <p class="para1">This div has a light green background.</p>
+        <p class="para2">This div is a Transparent.</p>
+      </div>
+    </div>
+    <hr />
+
+    <div class="div2">
+      <h2>currentcolor Css:</h2>
+      <div>
+        <p class="para3">
+          This div has a light green background, When color is blue and give
+          border-colot currentcolot automatically border-color take blue color.
+        </p>
+        <p class="para4">
+          This div's border color and shadow color is set to the current color
+          value of the parent div element.
+        </p>
+      </div>
+    </div>
+    <hr />
+
+    <div>
+      <h2>The inherit Keyword</h2>
+
+      <div class="div">
+        Here, the <span class="span">span element's</span> border settings will
+        be inherited from the parent element.
+      </div>
+      <br />
+
+      <div class="div" style="border: 2px dotted blue">
+        Here, the <span class="span">span element's</span> border settings will
+        also be inherited from the parent element.
+      </div>
+    </div>
+  </body>
+</html>

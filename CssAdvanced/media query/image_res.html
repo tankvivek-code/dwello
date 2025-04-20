@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+      }
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      .column {
+        flex: 25%;
+        max-width: 25%;
+        padding: 0 4px;
+      }
+
+      .column img {
+        margin-top: 8px;
+        vertical-align: middle;
+      }
+
+      @media screen and (max-width: 800px) {
+        .column {
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Image Grid</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Responsive Image Grid</h1>
+      <p>Resize the browser window to see the responsive effect.</p>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <img
+          src="https://media.istockphoto.com/id/1301592082/photo/beautiful-meadow-field-with-fresh-grass-and-yellow-dandelion-flowers-in-nature.jpg?s=612x612&w=0&k=20&c=fbTwYcoItgf2lc6fMx6d53s7qxW8CNVKr_RXVaVbnZM="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1162998855/photo/the-sun-goes-down-behind-the-autumn-forest.jpg?s=612x612&w=0&k=20&c=FUboaqu1cbviM1RKy7UEsYm7RsJjSBYyjOTwJXUDGVs="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1345840955/photo/sunset-at-the-beach-near-the-village-of-zoutelande-on-the-coast-of-the-province-zeeland.jpg?s=612x612&w=0&k=20&c=3bjw_5t2w3zDv75bC_0bLJq8VjGhqdOIWSRFjbx1APw="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1399856226/photo/magical-forest-landscape-with-sunbeam-lighting-up-the-golden-foliage.jpg?s=612x612&w=0&k=20&c=oDRyepvw4f-Jb0lfupNnJv4FgqIujeDc9t4p7t6MlvI="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1267676223/photo/kikuchi-valley-waterfall-and-light-lay-in-the-forest-kikuchi-kumamoto-japan.jpg?s=612x612&w=0&k=20&c=wF0jLhudYNP_NPiewtkS4kqKN4gMkRw0RC6fz0PFVos="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/935746242/photo/mata-atlantica-atlantic-forest-in-brazil.jpg?s=612x612&w=0&k=20&c=NqE6m2Q8J2w6M7x7Pi8VxnMzLzq-HJQvCt5EMuvMU5o="
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="https://media.istockphoto.com/id/1162998855/photo/the-sun-goes-down-behind-the-autumn-forest.jpg?s=612x612&w=0&k=20&c=FUboaqu1cbviM1RKy7UEsYm7RsJjSBYyjOTwJXUDGVs="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1301592082/photo/beautiful-meadow-field-with-fresh-grass-and-yellow-dandelion-flowers-in-nature.jpg?s=612x612&w=0&k=20&c=fbTwYcoItgf2lc6fMx6d53s7qxW8CNVKr_RXVaVbnZM="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1301592082/photo/beautiful-meadow-field-with-fresh-grass-and-yellow-dandelion-flowers-in-nature.jpg?s=612x612&w=0&k=20&c=fbTwYcoItgf2lc6fMx6d53s7qxW8CNVKr_RXVaVbnZM="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/641093712/photo/sunset-over-indian-ocean.jpg?s=612x612&w=0&k=20&c=ZqjI_JlpKtEHzm9kPe40GXhcDM9BfwT-INUIi68pcGY="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/935746242/photo/mata-atlantica-atlantic-forest-in-brazil.jpg?s=612x612&w=0&k=20&c=NqE6m2Q8J2w6M7x7Pi8VxnMzLzq-HJQvCt5EMuvMU5o="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1345840955/photo/sunset-at-the-beach-near-the-village-of-zoutelande-on-the-coast-of-the-province-zeeland.jpg?s=612x612&w=0&k=20&c=3bjw_5t2w3zDv75bC_0bLJq8VjGhqdOIWSRFjbx1APw="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1267676223/photo/kikuchi-valley-waterfall-and-light-lay-in-the-forest-kikuchi-kumamoto-japan.jpg?s=612x612&w=0&k=20&c=wF0jLhudYNP_NPiewtkS4kqKN4gMkRw0RC6fz0PFVos="
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="https://media.istockphoto.com/id/1301592082/photo/beautiful-meadow-field-with-fresh-grass-and-yellow-dandelion-flowers-in-nature.jpg?s=612x612&w=0&k=20&c=fbTwYcoItgf2lc6fMx6d53s7qxW8CNVKr_RXVaVbnZM="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/641093712/photo/sunset-over-indian-ocean.jpg?s=612x612&w=0&k=20&c=ZqjI_JlpKtEHzm9kPe40GXhcDM9BfwT-INUIi68pcGY="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/935746242/photo/mata-atlantica-atlantic-forest-in-brazil.jpg?s=612x612&w=0&k=20&c=NqE6m2Q8J2w6M7x7Pi8VxnMzLzq-HJQvCt5EMuvMU5o="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1267676223/photo/kikuchi-valley-waterfall-and-light-lay-in-the-forest-kikuchi-kumamoto-japan.jpg?s=612x612&w=0&k=20&c=wF0jLhudYNP_NPiewtkS4kqKN4gMkRw0RC6fz0PFVos="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1162998855/photo/the-sun-goes-down-behind-the-autumn-forest.jpg?s=612x612&w=0&k=20&c=FUboaqu1cbviM1RKy7UEsYm7RsJjSBYyjOTwJXUDGVs="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1399856226/photo/magical-forest-landscape-with-sunbeam-lighting-up-the-golden-foliage.jpg?s=612x612&w=0&k=20&c=oDRyepvw4f-Jb0lfupNnJv4FgqIujeDc9t4p7t6MlvI="
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="column">
+        <img
+          src="https://media.istockphoto.com/id/1267676223/photo/kikuchi-valley-waterfall-and-light-lay-in-the-forest-kikuchi-kumamoto-japan.jpg?s=612x612&w=0&k=20&c=wF0jLhudYNP_NPiewtkS4kqKN4gMkRw0RC6fz0PFVos="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1399856226/photo/magical-forest-landscape-with-sunbeam-lighting-up-the-golden-foliage.jpg?s=612x612&w=0&k=20&c=oDRyepvw4f-Jb0lfupNnJv4FgqIujeDc9t4p7t6MlvI="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1162998855/photo/the-sun-goes-down-behind-the-autumn-forest.jpg?s=612x612&w=0&k=20&c=FUboaqu1cbviM1RKy7UEsYm7RsJjSBYyjOTwJXUDGVs="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/1301592082/photo/beautiful-meadow-field-with-fresh-grass-and-yellow-dandelion-flowers-in-nature.jpg?s=612x612&w=0&k=20&c=fbTwYcoItgf2lc6fMx6d53s7qxW8CNVKr_RXVaVbnZM="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/641093712/photo/sunset-over-indian-ocean.jpg?s=612x612&w=0&k=20&c=ZqjI_JlpKtEHzm9kPe40GXhcDM9BfwT-INUIi68pcGY="
+          style="width: 100%"
+        />
+        <img
+          src="https://media.istockphoto.com/id/935746242/photo/mata-atlantica-atlantic-forest-in-brazil.jpg?s=612x612&w=0&k=20&c=NqE6m2Q8J2w6M7x7Pi8VxnMzLzq-HJQvCt5EMuvMU5o="
+          style="width: 100%"
+        />
+      </div>
+    </div>
+  </body>
+</html>

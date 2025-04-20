@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .div {
+                width: 300px;
+                height: 100px;
+                background-color: yellow;
+                border: 1px solid black;
+                transform: translate(10px, 50px);
+            }
+            .divr{
+                background-color: yellow;
+                height: 100px;
+                width: 300px;
+                border: 1px solid black;
+                transform: rotate(25deg);
+                margin: 70px;
+            }
+            .divs{
+                background-color: yellow;
+                margin: 150px;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                transform: scale(2, 3);
+            }
+            .normaldiv{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+            }
+            .divsky{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                transform: skewy(20deg);
+            }
+            .divskx{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                transform: skewx(20deg);
+            }
+            .divsk{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                transform: skew(20deg , 10deg);
+            }
+            .divmatrix{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                transform: matrix(1, -0.3, 0, 1, 0, 0);
+
+            }
+            .divmatrix1{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                transform: matrix(1, 0, 0.5, 1, 150, 0);
+
+            }
+            .rdiv{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                transform: rotateX(150deg);
+            }
+            .rdiv1{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                transform: rotateY(150deg);
+            }
+            .rdiv2{
+                background-color: yellow;
+                height: 100px;
+                width: 200px;
+                border: 1px solid black;
+                transform: rotateZ(9        0deg);
+            }
+
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Transform</title>
+    </head>
+    <body>
+        <h1>The translate() Method:</h1>
+        <p>The translate() method moves an element from its current
+            position:</p>
+
+        <div class="div">
+            This div element is moved 50 pixels to the right, and 100 pixels
+            down from its current position, translate(10px, 50px)
+        </div><br><br>
+
+        <h1>The Rotate() Mrthod:</h1>
+        <p>The translate() method Rotate an element from its current
+            position:</p>
+
+        <div class="divr">
+            This div element is rotate 20deg from its current
+            position,rotate(-25deg)
+        </div>
+        <hr>
+
+        <h1>The Scale() Method:</h1>
+        <p>The scale() method increases or decreases the size of an element.</p>
+
+        <div class="divs">
+            This div element increases or decreases the size of an
+            element,scale(2,3)
+        </div>
+        <h1>Note:</h1><p>And use as a scalex(value), scaley(value)..</p>
+        <hr>
+
+        <h1>The Skew() Method:</h1>
+        <p>The skewy() method skews an element.</p>
+
+        <div class="normaldiv">This is Normal div.</div>
+        <div class="divsky">
+            This div element skews an element along y(20deg).</div><br>
+
+        <p>The skewx() method skews an element x ages.</p>
+
+        <div class="normaldiv">This is Normal div.</div>
+        <div class="divskx">
+            This div element skews an element along the x(20deg)</div> <br>
+
+        <p>The skew() method skews an element.</p>
+
+        <div class="normaldiv">This is Normal div.</div>
+        <div class="divsk">
+            <div class>
+                This div element is skewed 20 degrees along the X-axis, and 10
+                degrees along the Y-axis.
+            </div>
+        </div>
+        <hr>
+
+        <h1>The Matrix() Method:</h1>
+
+        <p>The matrix() method combines all the 2D transform methods into
+            one.</p>
+
+        <div class="normaldiv">
+            This a normal div element.
+        </div>
+
+        <div class="divmatrix">
+            Using the matrix() method.
+        </div>
+
+        <div class="divmatrix1">
+            Another use of the matrix() method.
+        </div>
+        <hr>
+
+        <h1>The Rotatex() Mrthod:</h1>
+
+        <p>The rotateX() method rotates an element around its X-axis at a given
+            degree.</p>
+
+        <div class="normaldiv">This is normal div.</div>
+
+        <div class="rdiv">This div element is rotated 150 degrees.</div>
+
+        <p>The rotateY() method rotates an element around its X-axis at a given
+            degree.</p>
+
+        <div class="normaldiv">This is normal div.</div>
+
+        <div class="rdiv1">This div element is rotated 150 degrees.</div>
+
+        <p>The rotateZ() method rotates an element around its X-axis at a given
+            degree.</p>
+
+        <div class="normaldiv">This is normal div.</div>
+
+        <div class="rdiv2">This div element is rotated 90 degrees.</div>
+    </body>
+</html>

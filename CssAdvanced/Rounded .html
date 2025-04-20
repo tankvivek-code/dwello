@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .rcorner1{
+                background-color: antiquewhite;
+                border-radius: 25px;
+                width: 200px;
+                height: 150px;
+                padding: 20px;
+            }
+            .rcorner2{
+                border: 10px solid none;
+                border-radius: 25px;
+                width: 200px;
+                height: 150px;
+                padding: 15px;
+            }
+            .rcorner3{
+                background: url('/Css/images/background.jpg');
+                background-position: left top;
+                background-repeat: repeat;
+                border-radius: 25px;
+                width: 200px;
+                height: 150px;
+                padding: 20px;
+                color: white;
+            }
+            .rcorner4{
+                background-color: green;
+                border-radius: 15px 50px 30px 5px;
+                width: 200px;
+                height: 150px;
+                padding: 20px;
+            }
+            .rcorner5{
+                background-color: green;
+                border-radius: 25px 35px 10px;
+                width: 200px;
+                height: 150px;
+                padding: 20px;
+            }
+            .rcorner6{
+                background-color: green;
+                border-radius: 20px 40px;
+                width: 200px;
+                height: 150px;
+                padding: 20px;
+            }
+            .rcorner7{
+                background-color: green;
+                border-radius: 30px;
+                width: 200px;
+                height: 150px;
+                padding: 20px;
+            }
+        .rcorners8 {
+                border-radius: 50px / 15px;
+                background: #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px; 
+            }
+
+            .rcorners9 {
+                border-radius: 15px / 50px;
+                background: #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px; 
+            }
+
+            .rcorners0 {
+                border-radius: 50%;
+                background: #73AD21;
+                padding: 20px; 
+                width: 200px;
+                height: 150px;
+            }
+            .rcorner11{
+                border: 10px solid transparent;
+                border-radius: 25px;
+                width: 200px;
+                height: 150px;
+                padding: 15px;
+                border-image: url(../CssAdvanced/images/border.png) 30 round;
+            }
+            .rcorner12{
+                border: 10px solid transparent;
+                border-radius: 25px;
+                width: 200px;
+                height: 150px;
+                padding: 15px;
+                border-image: url(../CssAdvanced/images/border.png) 30 stretch;
+            }
+            .r1{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(images/border.png) 50 round;
+            }
+            .r2{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(images/border.png) 20% round;
+            }
+            .r3{
+                border: 10px solid transparent;
+                padding: 15px;
+                border-image: url(images/border.png) 30% round;
+            }
+
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rounded Corners Demo</title>
+    </head>
+    <body>
+        <h1>This Border-radius Property:-</h1>
+
+        <p>Rounded corners for an element with a specified background color:</p>
+        <p class="rcorner1">Rounded corners!</p>
+        <p>Rounded corners for an element with a border:</p>
+        <p class="rcorner2">Rounded corners!</p>
+        <p>Rounded corners for an element with a background image:</p>
+        <p class="rcorner3">Rounded corners!</p>
+        <p>Four values - border-radius: 15px 50px 30px 5px:(first value applies
+            to top-left corner, second value applies to top-right corner, third
+            value applies to bottom-right corner, and fourth value applies to
+            bottom-left corner)</p>
+        <p class="rcorner4"></p>
+        <p>Three values - border-radius: 25px 35px 10px (first value applies to
+            top-left corner, second value applies to top-right and bottom-left
+            corners, and third value applies to bottom-right corner):</p>
+        <p class="rcorner5"></p>
+        <p>Two values - border-radius: 20px 40px(first value applies to top-left
+            and bottom-right corners, and the second value applies to top-right
+            and bottom-left corners):</p>
+        <p class="rcorner6"></p>
+        <p>one values - border-radius: 30px (the value applies to all four
+            corners, which are rounded equally):</p>
+        <p class="rcorner7"></p>
+        <p>Elliptical border - border-radius: 50px / 15px:</p>
+        <p class="rcorners8"></p>
+
+        <p>Elliptical border - border-radius: 15px / 50px:</p>
+        <p class="rcorners9"></p>
+
+        <p>Ellipse border - border-radius: 50%:</p>
+        <p class="rcorners0"></p>
+        <h1>The border-image Property</h1>
+
+        <p>Here, the middle sections of the image are repeated to create the
+            border:</p>
+        <p class="rcorner11">border-image: url(border.png) 30 round;</p>
+
+        <p>Here, the middle sections of the image are repeated to create the
+            border:</p>
+        <p class="rcorner12">border-image: url(border.png) 30 stretch;</p>
+
+        <p class="r1">border-image: 50 round;</p>
+        <p class="r2">border-image: 20% round;</p>
+        <p class="r3">border-image: 30% round;</p>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            
+            input{
+                width: 100%;
+            }
+        input[type=text], select {
+            background-color: #3CBC8D;
+            color: white;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type=password] {
+            background-color: #3CBC8D;
+            color: white;
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .div2{
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 5px;
+            line-height: 2;
+            width: 500px;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+        }
+       
+    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>From Css</title>
+    </head>
+    <body>
+        <div align="center">
+
+            <h1>Using Css Style an HTML Form:</h1>
+
+            <div class="div2">
+                <form action="/action_page.php" autocomplete="on">
+                    <label for="first name">First Name:</label>
+                    <input type="text" id="fname" name="lnm"
+                        placeholder="First name" size="30" autofocus required>
+                    <br>
+                    <label for="last name">Last Name:</label>
+                    <input type="text" id="lname" name="lnm"
+                        placeholder="(Optional)Last name" size="30">
+                    <br>
+                    <label for="Password">Password</label>
+                    <input type="password" id="pass" name="password"
+                        placeholder="Enter Your password" size="30" required>
+                    <br>
+                    <input type="submit" id="submit" name="submit" size="30">
+                </form>
+            </div>
+
+        </div>
+
+    </body>
+</html>

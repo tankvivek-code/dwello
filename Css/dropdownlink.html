@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            .dropbtn {
+                background-color: #4CAF50;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+                padding: 50px;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+            .dropdown-content a:hover {
+                background-color: #f1f1f1
+            }
+
+            .dropdown:hover .dropdown-content {
+                  display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                 background-color: #3e8e41;
+            }	
+        </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DropDown Link Demo</title>
+    </head>
+    <body>
+
+        <h2>Dropdown Menu</h2>
+        <p>Move the mouse over the button to open the dropdown menu When Click
+            or hover in left To show Left Side and same in right side.</p>
+
+        <div class="dropdown" style="float: Left;">
+            <button class="dropbtn">left</button>
+            <div class="dropdown-content">
+                <a href="#Home">Home</a>
+                <a href="#About Us">About Us</a>
+                <a href="#Login">Login</a>
+            </div>
+        </div>
+
+        <div class="dropdown" style="float: right;">
+            <button class="dropbtn">Right</button>
+            <div class="dropdown-content">
+                <a href="#Home">Home</a>
+                <a href="#Contact Us">Contact Us</a>
+                <a href="#Sign Up">Sign Up</a>
+            </div>
+        </div>
+
+        
+    </body>
+</html>

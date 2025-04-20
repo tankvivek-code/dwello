@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+        div > p{
+            background-color: yellow;
+        }
+        div + p{
+            background-color: yellow;
+        } 
+         div ~ p{
+            background-color: yellow;
+         }
+        body{
+            background-color: aliceblue;
+        }
+        h1{
+            text-align: center;
+            background-color: aquamarine;
+            font-style: italic;
+            text-shadow: 2px 2px;
+            color: blue;
+        }
+    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Combinator Propertys</title>
+    </head>
+    <body>
+        <h1>This is > combinator: </h1>
+        <p> This is paragraph</p>
+        <div>
+            <p>This is paragraph</p>
+
+            <div>
+                <p>This is child div paragarph</p>
+                <a href><p>This is a tag paragraph</p></a>
+                <button><p>this is button tag paragraph</p></button>
+            </div>
+            <p>This is parent div paragraph</p>
+            <p>This is paragraph.</p>
+        </div>
+        <p> this is outer div paragraph</p>
+        <hr>
+
+        <h1>This is + combinator:</h1>
+        <div>
+            <p>this is 1st para</p>
+            <p>this is 2nd para</p>
+        </div>
+
+        <p>This is after div tag take a div + P all delcaration.</p>
+        <p>This is after p tag .</p>
+
+        <div>
+            <p>this is 1st para</p>
+            <p>this is 2nd para</p>
+        </div>
+
+        <p>This is after div tag take a div + P all delcaration.</p>
+        <p>This is after p tag .</p>
+        <hr>
+
+        <h1>This is ~ combinator: </h1>
+        <h2>General Sibling Selector</h2>
+
+        <p>The general sibling selector (~) selects all elements that are next
+            siblings of a specified element.</p>
+
+        <p>Paragraph 1.</p>
+
+        <div>
+            <p>Paragraph 2.</p>
+        </div>
+
+        <p>Paragraph 3.</p>
+        <code>Some code.</code>
+        <p>Paragraph 4.</p>
+        <div>
+            <p>Paragraph 2.</p>
+        </div>
+    </body>
+</html>

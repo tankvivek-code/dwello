@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <style>
+        body {
+            cursor: url('images/christmas-tree-15498_128.gif'), auto;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        a[target] {
+            background-color: yellow;
+        }
+
+        a[target="_blank"] {
+            background-color: rosybrown;
+        }
+
+        [title~="flower"] {
+            border: 3px solid yellow;
+        }
+
+        [class|="top"] {
+            background-color: blue;
+            text-align: center;
+        }
+
+        [class$="text"] {
+            background-color: chartreuse;
+        }
+
+        [class*="ni"] {
+            background-color: red;
+        }
+
+        [class^="tip"] {
+            background-color: greenyellow;
+        }
+    </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Css Attributes Selector</title>
+    </head>
+
+    <body>
+        <div>
+            <h2>Css Attributes Selector</h2>
+            <p>The links with a target attribute gets a yellow background:</p>
+
+            <a href="abosulate.html" target="_self">Example 1</a>
+            <a href="csstext.html">Example 2</a>
+            <a href="border.html">Example 3</a>
+        </div>
+        <hr>
+
+        <div>
+            <h1>When image give title flower the border will displayed by attr
+                of css:</h1>
+            <img src="images/flower.gif" alt="tree flower" title="tree flower">
+            <img src="images/heart_tree.jpg" alt="heart_tree"
+                title="heart_tree">
+            <img src="images/flower1.jpg" alt="flower" title="flower">
+        </div>
+        <hr>
+
+        <div>
+            <h2>CSS [attribute|="value"] Selector:</h2>
+
+            <h1 class="top-header">Welcome</h1>
+            <p class="top">Hello world!</p>
+            <p class="topcontent">Are you learning CSS?</p>
+
+        </div>
+        <hr>
+
+        <div>
+            <h2>CSS [attribute$="value"] Selector means not:</h2>
+
+            <h1 class="mytext">Welcome</h1>
+            <p class="behind">Hello world!</p>
+            <p class="text">Are you learning CSS?</p>
+
+        </div>
+        <hr>
+
+        <div>
+            <h2>CSS [attribute*="value"] Selector means allows:</h2>
+
+            <h1 class="night">Welcome</h1>
+            <p class="top123night">Hello world!</p>
+            <p class="tp">Are you learning CSS?</p>
+
+        </div>
+        <hr>
+
+        <div>
+            <h2>CSS [attribute^="value"] Selector means starts with:</h2>
+            <h1 class="tiptop">Welcome</h1>
+            <p class="toaw">Hello world!</p>
+            <p class="tip">Are you learning CSS?</p>
+        </div>
+
+        <div>
+            <h2>CSS [attribute="value"] Selector:</h2>
+            <a href="combinator.html" target="_blank">Eaxmple 1</a>
+            <a href="csstext.html">Example 2</a>
+            <a href="border.html" target="_blank">Example 3</a>
+        </div>
+
+    </body>
+
+</html>
