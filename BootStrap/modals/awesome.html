@@ -1,0 +1,75 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap 5 Modal with Close Button</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .btn-close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Button trigger modal -->
+    <div class="container mt-5">
+      <h3>Tired of searching</h3>
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Open Modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content position-relative text-center p-4">
+            <!-- Close button top right -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+
+            <img
+              src="https://storage.googleapis.com/a1aa/image/27ed4f61-43d9-4637-d076-ffc4e7a562d8.jpg"
+              alt="Green and blue gradient circular checkmark icon"
+              width="80"
+              height="80"
+              class="mx-auto mb-4"
+            />
+            <h5 class="modal-title text-secondary mb-2" id="exampleModalLabel">
+              Awesome!
+            </h5>
+            <p class="text-muted small mb-4">
+              You are ready to proceed using CakeHR
+            </p>
+            <button
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              Start CackHR
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
